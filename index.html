@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./Assets/Css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Foodi-projects</title>
+</head>
+
+<body>
+    <!-- Here is start my nav section  -->
+    <nav class="pt-3 pb-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <img src="./Assets/Images/foodi-logo.png" alt="">
+                </div>
+                <div class="hide-mobile">
+                    <ul class="d-flex gap-5 list-unstyled mb-0 dropdown">
+                        <li style="color: #39DB4A;">Home</li>
+                        <li data-bs-toggle="dropdown">Menu <i class="fa-solid fa-chevron-down"
+                                style="color: #39DB4A;"></i></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">VEG</a></li>
+                            <li><a class="dropdown-item" href="#">NON-VEG</a></li>
+                            <li><a class="dropdown-item" href="#">STARTER</a></li>
+                            <li><a class="dropdown-item" href="#">SNACKS</a></li>
+                        </ul>
+                        <li data-bs-toggle="dropdown">Services <i class="fa-solid fa-chevron-down"
+                                style="color: #39DB4A;"></i></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Online Ordering</a></li>
+                            <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Fast-Delivery</a></li>
+                            <li><a class="dropdown-item" href="#">Catering</a></li>
+                        </ul>
+                        <li>Offers</li>
+                    </ul>
+                </div>
+                <div class="hide-mobile">
+                    <div class="d-flex gap-4 align-items-center nav-RHS">
+                        <i class="bi bi-search"></i>
+
+                        <div style="position: relative;">
+                            <i class="bi bi-bag"></i>
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="background-color: #39DB4A; height: 13px; width: 13px; border-radius: 50px; position: absolute; top: 1px; right: -6px; font-size: 0.6rem; font-weight: 600; color: white;">
+                                8
+                            </div>
+                        </div>
+                        <button>
+                            <i class="bi bi-telephone"></i>
+                            Contact
+                        </button>
+                    </div>
+
+                </div>
+                <div class="hide-desktop">
+                    <div class="dropdown d-flex gap-4 align-items-center">
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-bag"></i>
+                        <i class="fa-solid fa-bars" data-bs-toggle="dropdown"></i>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#home">Home</a></li>
+                            <li><a class="dropdown-item" href="#menu">Menu</a></li>
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                            <li><a class="dropdown-item" href="#offer">Offers</a></li>
+                            <a href="#" class="dropdown-item">
+                                <button
+                                    style="background-color: #39DB4A; color: white; border: none; border-radius: 15px;">
+                                    <i class="bi bi-telephone"></i>
+                                    Contact
+                                </button>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Here is end my nav section  -->
+
+    <!-- Here is start my Hero section  -->
+    <section class="hero-sec" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div>
+                        <h1>
+                            Dive into Delights Of Delectable Food
+                        </h1>
+                        <p class="para-rhs pt-3 pb-3">
+                            Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship
+                        </p>
+                        <div class="d-flex align-items-center gap-4 hero-sec-lhs-btn">
+                            <button class="hero-sec-lhs-btn-1">Order Now</button>
+                            <button class="hero-sec-lhs-btn-2">Watch Video</button>
+                            <div class="shadow rounded-circle d-flex justify-content-center align-items-center"
+                                style="font-size: 30px; height: 50px; width: 50px;">
+
+                                <button onclick="showVideo()" style="border: none; background: transparent;"><i
+                                        class="bi bi-play-fill" id="#videoModal"></i></button>
+
+
+
+
+                                <!-- Video Modal -->
+                                <div id="videoModal">
+                                    <div class="close-btn" onclick="hideVideo()">&times;</div>
+                                    <video id="myVideo" controls>
+                                        <source src="./Assets/Video/Restaurant-vdo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="position: relative;">
+                        <img src="./Assets/Images/Group 20 (1).png" alt="" class="img-fluid">
+                        <div class=" row justify-content-center align-items-center" style="margin-top: -8%;">
+                            <div class="col-md-6">
+                                <div class="card p-2 shadow spicy-ndls" style="border: none; border-radius: 20px;">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="w-20">
+                                            <img src="./Assets/Images/spicy-noodles.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <h3>Spicy noodles</h3>
+                                            <div class="d-flex gap-1">
+                                                <i class="bi bi-star-fill" style="color: #FFE605;"></i>
+                                                <i class="bi bi-star-fill" style="color: #FFE605;"></i>
+                                                <i class="bi bi-star-fill" style="color: #FFE605;"></i>
+                                                <i class="bi bi-star" style="color: #B0B4B7;"></i>
+                                                <i class="bi bi-star" style="color: #B0B4B7;"></i>
+                                            </div>
+                                            <p class=" mb-0"><small
+                                                    style="color: #FF7979; font-weight: 600;">$</small>18.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card p-2 shadow Vegetarian-sld" style="border: none; border-radius: 20px;">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="w-20">
+                                            <img src="./Assets//Images/salad.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <h3>Vegetarian salad</h3>
+                                            <div class="d-flex gap-1">
+                                                <i class="bi bi-star-fill" style="color: #FFE605;"></i>
+                                                <i class="bi bi-star-fill" style="color: #FFE605;"></i>
+                                                <i class="bi bi-star-fill" style="color: #FFE605;"></i>
+                                                <i class="bi bi-star-fill" style="color: #FFE605;"></i>
+                                                <i class="bi bi-star" style="color: #B0B4B7;"></i>
+                                            </div>
+                                            <p class="mb-0"><small
+                                                    style="color: #FF7979; font-weight: 600;">$</small>23.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="color-bg-hero-sec">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Here is end my Hero section  -->
+
+    <!-- here is my Popular Catagories section start  -->
+
+    <section class="pt-5 pb-5 popular-sec text-center" id="menu">
+        <div class="container">
+            <div class="popular-sec-heading">
+                <p>Customer Favorites</p>
+                <h2>Popular Catagories</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 col-6">
+                    <div class="card pt-4 pb-4 border-0 mb-3">
+                        <div class="d-flex justify-content-center align-items-center pb-3">
+                            <div class=" img-bg">
+                                <img src="./Assets/Images/main dish.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <h3>Main Dish</h3>
+                        <p>(86 dishes)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card pt-4 pb-4 border-0 mb-3">
+                        <div class="d-flex justify-content-center align-items-center pb-3">
+                            <div class="img-bg">
+                                <img src="./Assets/Images/Break Fast.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <h3>Break Fast</h3>
+                        <p>(12 break fast)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card pt-4 pb-4 border-0 mb-3">
+                        <div class="d-flex justify-content-center align-items-center pb-3">
+                            <div class="img-bg">
+                                <img src="./Assets/Images/Dessert.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <h3>Dessert</h3>
+                        <p>(48 dessert)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card pt-4 pb-4 border-0 mb-3">
+                        <div class="d-flex justify-content-center align-items-center pb-3">
+                            <div class="img-bg">
+                                <img src="./Assets/Images/Browse all.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <h3>Browse All</h3>
+                        <p>(255 Items)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- here is my Popular Catagories section end  -->
+
+    <!-- Special dishes Section Start -->
+
+    <section class="Standout-sec" id="offer">
+        <div class="container">
+            <div id="pen" class="carousel slide" data-bs-ride="carousel">
+                <div>
+                    <p class="special-dishes">Special Dishes</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="dishes-heading">Standout Dishes From Our Menu</h2>
+                        <div class="arrow-div d-flex gap-4">
+                            <div class="left-arrow left  d-flex justify-content-center align-items-center"
+                                data-bs-target="#pen" data-bs-slide="prev">
+                                <img src="./Assets/Images/left-arrow.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="right-arrow right  d-flex justify-content-center align-items-center"
+                                data-bs-target="#pen" data-bs-slide="next">
+                                <img src="./Assets/Images/right -arrow.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row mt-4">
+                            <div class="col-md-4 mb-3 ">
+                                <div class="card card-design border-0 py-3 position-relative ">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center item active">
+                                        <img src="./Assets/Images/Fattoush salad.png" alt=""
+                                            class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Fattoush salad</h2>
+                                        <p class="item mb-0">Fresh mixed greens with crispy pita, seasonal vegetables,
+                                            and tangy lemon dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-6"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>24.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.9
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-design border-0 py-3 position-relative item">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="./Assets/Images/Vegetable salad.png" alt=""
+                                            class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Vegetable salad</h2>
+                                        <p class="item mb-0">A healthy mix of fresh vegetables tossed with light herbs
+                                            and refreshing dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-5"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>26.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.6
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-design border-0 py-3 position-relative item">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="./Assets/Images/Egg salad.png" alt="" class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Egg Vegi salad</h2>
+                                        <p class="item mb-0">Boiled eggs combined with fresh vegetables, olives, and a
+                                            light flavorful dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-6"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>23.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.5
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row mt-4">
+                            <div class="col-md-4 mb-3 ">
+                                <div class="card card-design border-0 py-3 position-relative ">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center item active">
+                                        <img src="./Assets/Images/Fattoush salad.png" alt=""
+                                            class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Fattoush salad</h2>
+                                        <p class="item mb-0">Fresh mixed greens with crispy pita, seasonal vegetables,
+                                            and tangy lemon dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-6"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>24.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.9
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-design border-0 py-3 position-relative item">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="./Assets/Images/Vegetable salad.png" alt=""
+                                            class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Vegetable salad</h2>
+                                        <p class="item mb-0">A healthy mix of fresh vegetables tossed with light herbs
+                                            and refreshing dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-5"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>26.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.6
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-design border-0 py-3 position-relative item">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="./Assets/Images/Egg salad.png" alt="" class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Egg Vegi salad</h2>
+                                        <p class="item mb-0">Boiled eggs combined with fresh vegetables, olives, and a
+                                            light flavorful dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-6"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>23.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.5
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row mt-4">
+                            <div class="col-md-4 mb-3 ">
+                                <div class="card card-design border-0 py-3 position-relative ">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center item active">
+                                        <img src="./Assets/Images/Fattoush salad.png" alt=""
+                                            class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Fattoush salad</h2>
+                                        <p class="item mb-0">Fresh mixed greens with crispy pita, seasonal vegetables,
+                                            and tangy lemon dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-6"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>24.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.9
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-design border-0 py-3 position-relative item">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="./Assets/Images/Vegetable salad.png" alt=""
+                                            class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Vegetable salad</h2>
+                                        <p class="item mb-0">A healthy mix of fresh vegetables tossed with light herbs
+                                            and refreshing dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-5"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>26.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.6
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-design border-0 py-3 position-relative item">
+                                    <img src="./Assets/Images/design.png" alt="" class="img-fluid position-absolute"
+                                        style="width: 20%; top: 0; right: 0;">
+                                    <img src="./Assets/Images/Vector (3).png"
+                                        class="img-fluid position-absolute design-vector" alt="">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="./Assets/Images/Egg salad.png" alt="" class="img-fluid card-image">
+                                    </div>
+                                    <div class="card-details mt-4 px-5 d-flex flex-column gap-3">
+                                        <h2 class="salad mb-0">Egg Vegi salad</h2>
+                                        <p class="item mb-0">Boiled eggs combined with fresh vegetables, olives, and a
+                                            light flavorful dressing.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="price"> <small class="fs-6"
+                                                    style="color: #FF6868; font-size: 1.2rem !important;">$</small>23.00
+                                            </p>
+                                            <p class="price1 d-flex gap-1"><i class="bi bi-star-fill"
+                                                    style="color: #FFE605; font-size: 1.4rem; margin-right: 4px;"></i>4.5
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special dishes Section End -->
+
+    <!-- Customer section start -->
+
+    <section class="Customer-section mb-5">
+        <div class="container">
+            <div class="row d-flex justify-content-start align-items-center">
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <div class="d-flex justify-content-center align-items-center chef-img">
+                            <img src="./Assets/Images/chef.png" alt="" class=" chef-img p-4" style="z-index: 1;">
+                        </div>
+                        <img src="./Assets/Images/delicious.png" alt="" style="top: 60%; left: -2%; "
+                            class="img-fluid position-absolute">
+                        <img src="./Assets/Images/pizza.png" alt="" style="top: 60%; right: 16%;"
+                            class="img-fluid position-absolute">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="Feedback-section d-flex flex-column gap-3">
+                        <p class="Testimonials">Testimonials</p>
+                        <h2 class="about-us">What Our Customers Say About Us</h2>
+                        <p class="about-us-para mb-0">“I had the pleasure of dining at Foodi last night, and I'm still
+                            raving about the experience!
+                            The attention to detail in presentation and service was impeccable”</p>
+                        <div class="row d-flex justify-content-center align-items-center mt-5 ">
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <img src="./Assets/Images/1st review.png" alt="" class="img-fluid"
+                                        style="margin-left: 4%;">
+                                    <img src="./Assets/Images/2nd review.png" alt="" class="img-fluid"
+                                        style="margin-left: -10%;">
+                                    <img src="./Assets/Images/3rd review.png" alt="" class="img-fluid"
+                                        style="margin-left: -12%;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <h3 class="mb-0 Customer-Feedback-heading">Customer Feedback</h3>
+                                </div>
+
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p><i class="bi bi-star-fill"
+                                            style="color: #FFE605; font-size: 1.4rem; margin-right: 4px; margin-bottom: 0%;"></i>
+                                    </p>
+                                    <p><b> 4.9 </b> <small style="color: #807E7E; font-weight: 500;"> (18.6k Reviews)
+                                        </small> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer section start -->
+
+    <!-- our story section start -->
+
+    <section class="our-stry-sec" id="services">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <div class="our-stry-head d-flex flex-column align-items-start gap-4 p-3 ">
+                        <p class="our-stry-para">Our Story & Services</p>
+                        <h2>Our Culinary Journey And Services</h2>
+                        <p class="our-stry-para-2">Rooted in passion, we curate unforgettable dining <br> experiences
+                            and
+                            offer exceptional services, <br>
+                            blending culinary artistry with warm hospitality.</p>
+                        <button class="explore-btn rounded-pill btn">Explore</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="our-story-card">
+
+                                <div
+                                    class="d-flex flex-column align-items-center justify-content-start p-4 gap-3 bg-white card-div">
+                                    <img src="./Assets/Images/fi-rr-salad.png" alt="" class="img-fluid card-logo">
+                                    <h3 class="mb-0">Catering</h3>
+                                    <p class="text-center">Delight your guests with our flavors and presentation</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="our-story-card">
+
+                                <div
+                                    class="d-flex flex-column align-items-center justify-content-start  p-4 gap-3 bg-white card-div">
+                                    <img src="./Assets/Images/fi-rr-time-fast.png" alt="" class="img-fluid card-logo">
+                                    <h3 class="mb-0">Fast delivery</h3>
+                                    <p class="text-center">We deliver your order promptly to your door</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="our-story-card">
+                                <div
+                                    class="d-flex flex-column align-items-center justify-content-start  p-4 gap-3 bg-white  card-div">
+                                    <img src="./Assets/Images/fi-rr-shopping-cart-check.png" alt=""
+                                        class="img-fluid card-logo">
+                                    <h3 class="mb-0">Online Ordering</h3>
+                                    <p class="text-center">Explore menu & order with ease using our Online Ordering </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="our-story-card">
+
+                                <div
+                                    class="d-flex flex-column align-items-center justify-content-start  p-4 gap-3 bg-white card-div">
+                                    <img src="./Assets/Images/Vector (1).png" alt="" class="img-fluid card-logo">
+                                    <h3 class="mb-0">Gift Cards</h3>
+                                    <p class="text-center">Give the gift of exceptional dining with Foodi Gift Cards</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our story section end -->
+
+    <!-- Savor section start -->
+
+    <section class="savor-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="./Assets/Images/foodi-logo.png" alt="logo" class="img-fluid">
+                            <p class="mt-4">Savor the artistry where every dish is a culinary masterpiece</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-center">
+                                <ul class="list-unstyled d-flex flex-column align-items-start gap-3 "
+                                    style="color: #555555;">
+                                    <li class="fw-bold text-dark">Useful links</li>
+                                    <li>About us</li>
+                                    <li>Events</li>
+                                    <li>Blogs</li>
+                                    <li>FAQ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex main-menu-list">
+                                <ul class="list-unstyled d-flex flex-column align-items-start gap-3"
+                                    style="color: #555555;">
+                                    <li class="fw-bold text-dark">Main Menu</li>
+                                    <li>Home</li>
+                                    <li>Offers</li>
+                                    <li>Menus</li>
+                                    <li>Reservation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-center">
+                                <ul class="list-unstyled d-flex flex-column align-items-start gap-3"
+                                    style="color: #555555;">
+                                    <li class="fw-bold text-dark">Contact Us</li>
+                                    <li>example@email.com</li>
+                                    <li>+64 958 248 966</li>
+                                    <li>Social media</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Savor section end -->
+
+    <script>
+        function showVideo() {
+            const modal = document.getElementById("videoModal");
+            const video = document.getElementById("myVideo");
+            modal.style.display = "flex";
+            video.play();
+        }
+
+        function hideVideo() {
+            const modal = document.getElementById("videoModal");
+            const video = document.getElementById("myVideo");
+            video.pause();
+            video.currentTime = 0;
+            modal.style.display = "none";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<footer>
+
+    <section class="footer-sec">
+        <div class="container">
+            <div class="row py-5 justify-content-center">
+                <div class="col-md-3 mb-3">
+                    <div class="d-flex gap-3 align-items-center">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center"
+                            style="height: 50px; width: 50px; background-color: #39DB4A; color: white;">
+                            <img src="./Assets/Images/🦆 icon _facebook_.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="rounded-circle d-flex justify-content-center align-items-center"
+                            style="height: 50px; width: 50px; background-color: #EDFFEF; color: black;">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <div class="rounded-circle d-flex justify-content-center align-items-center"
+                            style="height: 50px; width: 50px; background-color: #EDFFEF; color: black;">
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                        <div class="rounded-circle d-flex justify-content-center align-items-center"
+                            style="height: 50px; width: 50px; background-color: #EDFFEF; color: black;">
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="w-100 d-flex align-items-center fw-bold" style="height: 50px; color: #555555;">
+                        <p class="reserved pt-3">Copyright 2023 Dscode | All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+</html>
