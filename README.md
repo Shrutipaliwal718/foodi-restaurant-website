@@ -12,3 +12,4 @@ Foodi is a responsive restaurant website designed to showcase menu items with a 
 https://foodi-project-shruti.netlify.app/
 
 ## GitHub Repository
+https://github.com/Shrutipaliwal718/foodi-restaurant-website
