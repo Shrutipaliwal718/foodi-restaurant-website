@@ -6,7 +6,7 @@ A responsive restaurant website built using HTML, CSS, Bootstrap, and JavaScript
 - HTML5
 - CSS3
 - Bootstrap
-- JavaScript# foodi-restaurant-website
+- JavaScript
 
 ## Live Demo
 https://foodi-project-shruti.netlify.app/
